@@ -19,7 +19,7 @@ def main():
 
         # 2. Try creating the database
         try:
-            cursor.execute("CREATE DATABASE alx_book_store")
+            cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
         except mysql.connector.Error as err:
             # Error code 1007: Can't create database; database exists
