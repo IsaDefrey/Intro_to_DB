@@ -14,7 +14,6 @@ def main():
             host='localhost',
             user='root',
             password='Selekta@2024',
-            database='alx_book_store'
         )
         cursor = conn.cursor()
 
